@@ -1,6 +1,6 @@
-/* ================================
+/* =================================
    基本設定
-================================ */
+================================= */
 
 * {
     margin: 0;
@@ -14,6 +14,7 @@ html {
 
 body {
     min-height: 100vh;
+
     background:
         radial-gradient(
             circle at 50% 0%,
@@ -21,12 +22,15 @@ body {
             transparent 35%
         ),
         #080808;
+
     color: #f5f5f5;
+
     font-family:
         Arial,
         "Noto Sans TC",
         "Microsoft JhengHei",
         sans-serif;
+
     line-height: 1.6;
 }
 
@@ -35,14 +39,10 @@ a {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-}
 
-
-/* ================================
+/* =================================
    導覽列
-================================ */
+================================= */
 
 .navbar {
     position: sticky;
@@ -60,15 +60,16 @@ img {
 
     background: rgba(8, 8, 8, 0.92);
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.08);
 
     backdrop-filter: blur(14px);
 }
 
 
-/* ================================
+/* =================================
    Logo
-================================ */
+================================= */
 
 .logo {
     display: flex;
@@ -89,7 +90,7 @@ img {
 }
 
 
-/* 自訂 Logo 圖片 */
+/* 你的 favicon.png */
 
 .custom-logo {
     width: 38px;
@@ -107,17 +108,23 @@ img {
 
 /* Footer Logo */
 
-.footer-logo .custom-logo {
+.footer-custom-logo {
     width: 30px;
     height: 30px;
 
+    display: block;
+
+    object-fit: contain;
+
     border-radius: 6px;
+
+    flex-shrink: 0;
 }
 
 
-/* ================================
+/* =================================
    導覽
-================================ */
+================================= */
 
 .navbar nav {
     display: flex;
@@ -155,6 +162,7 @@ img {
 
     left: 14px;
     right: 14px;
+
     bottom: 3px;
 
     height: 2px;
@@ -165,14 +173,15 @@ img {
 }
 
 
-/* ================================
+/* =================================
    PLAY NOW
-================================ */
+================================= */
 
 .nav-button {
     padding: 10px 18px;
 
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border:
+        1px solid rgba(255, 255, 255, 0.15);
 
     border-radius: 8px;
 
@@ -200,9 +209,9 @@ img {
 }
 
 
-/* ================================
+/* =================================
    首頁 Hero
-================================ */
+================================= */
 
 .home-hero {
     min-height: calc(100vh - 76px);
@@ -210,19 +219,17 @@ img {
     width: 100%;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
-    padding: 100px 7% 120px;
+    padding:
+        100px 7%
+        120px;
 
     position: relative;
 
     overflow: hidden;
 }
-
-
-/* Hero 光暈 */
 
 .home-hero::before {
     content: "";
@@ -247,9 +254,6 @@ img {
     pointer-events: none;
 }
 
-
-/* Hero 內容 */
-
 .hero-content {
     position: relative;
 
@@ -259,9 +263,6 @@ img {
 
     margin: 0 auto;
 }
-
-
-/* Hero 小標 */
 
 .hero-tag {
     display: inline-block;
@@ -276,11 +277,9 @@ img {
     letter-spacing: 4px;
 }
 
-
-/* Hero 標題 */
-
 .home-hero h1 {
-    font-size: clamp(72px, 11vw, 150px);
+    font-size:
+        clamp(72px, 11vw, 150px);
 
     line-height: 0.9;
 
@@ -295,9 +294,6 @@ img {
     color: #777;
 }
 
-
-/* Hero 描述 */
-
 .home-hero p {
     margin-top: 35px;
 
@@ -309,13 +305,12 @@ img {
 }
 
 
-/* ================================
-   Hero 按鈕
-================================ */
+/* =================================
+   Hero Buttons
+================================= */
 
 .hero-buttons {
     display: flex;
-
     align-items: center;
 
     gap: 12px;
@@ -333,7 +328,8 @@ img {
 
     padding: 0 22px;
 
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border:
+        1px solid rgba(255, 255, 255, 0.15);
 
     border-radius: 9px;
 
@@ -352,9 +348,11 @@ img {
 .button:hover {
     transform: translateY(-2px);
 
-    background: rgba(255, 255, 255, 0.08);
+    background:
+        rgba(255, 255, 255, 0.08);
 
-    border-color: rgba(255, 255, 255, 0.25);
+    border-color:
+        rgba(255, 255, 255, 0.25);
 
     color: #fff;
 }
@@ -374,20 +372,23 @@ img {
 }
 
 
-/* ================================
+/* =================================
    首頁卡片
-================================ */
+================================= */
 
 .home-links {
     width: min(1180px, 88%);
 
     margin: 0 auto;
 
-    padding: 0 0 120px;
+    padding:
+        0 0
+        120px;
 
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns:
+        repeat(4, 1fr);
 
     gap: 18px;
 }
@@ -403,9 +404,11 @@ img {
 
     flex-direction: column;
 
-    background: rgba(255, 255, 255, 0.025);
+    background:
+        rgba(255, 255, 255, 0.025);
 
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
 
     border-radius: 16px;
 
@@ -420,9 +423,11 @@ img {
 .home-card:hover {
     transform: translateY(-6px);
 
-    background: rgba(255, 255, 255, 0.04);
+    background:
+        rgba(255, 255, 255, 0.04);
 
-    border-color: rgba(255, 255, 255, 0.17);
+    border-color:
+        rgba(255, 255, 255, 0.17);
 }
 
 .home-card > span {
@@ -467,7 +472,8 @@ img {
 
     font-size: 13px;
 
-    transition: color 0.2s ease;
+    transition:
+        color 0.2s ease;
 }
 
 .home-card:hover strong {
@@ -475,22 +481,24 @@ img {
 }
 
 
-/* ================================
+/* =================================
    一般頁面
-================================ */
+================================= */
 
 .page {
     width: min(1180px, 88%);
 
     margin: 0 auto;
 
-    padding: 100px 0 120px;
+    padding:
+        100px 0
+        120px;
 }
 
 
-/* ================================
-   頁面標題
-================================ */
+/* =================================
+   Page Header
+================================= */
 
 .page-header {
     max-width: 800px;
@@ -512,7 +520,8 @@ img {
 }
 
 .page-header h1 {
-    font-size: clamp(48px, 7vw, 88px);
+    font-size:
+        clamp(48px, 7vw, 88px);
 
     line-height: 0.98;
 
@@ -536,9 +545,9 @@ img {
 }
 
 
-/* ================================
-   About Content
-================================ */
+/* =================================
+   About
+================================= */
 
 .content-box {
     display: grid;
@@ -550,13 +559,10 @@ img {
     padding: 45px;
 
     background:
-        linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0.055),
-            rgba(255, 255, 255, 0.015)
-        );
+        rgba(255, 255, 255, 0.025);
 
-    border: 1px solid rgba(255, 255, 255, 0.09);
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
 
     border-radius: 18px;
 }
@@ -565,7 +571,6 @@ img {
     color: #555;
 
     font-size: 14px;
-
     font-weight: 800;
 
     letter-spacing: 2px;
@@ -574,34 +579,24 @@ img {
 .content-box h2 {
     margin-bottom: 20px;
 
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .content-box p {
-    margin-bottom: 16px;
+    margin-top: 12px;
 
-    color: #999;
+    color: #888;
 
     font-size: 15px;
-
-    line-height: 1.8;
 }
-
-.content-box p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* ================================
-   About Feature Cards
-================================ */
 
 .content-grid {
     margin-top: 20px;
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:
+        repeat(3, 1fr);
 
     gap: 18px;
 }
@@ -611,41 +606,30 @@ img {
 
     padding: 30px;
 
-    background: rgba(255, 255, 255, 0.025);
+    background:
+        rgba(255, 255, 255, 0.025);
 
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
 
     border-radius: 16px;
-
-    transition:
-        transform 0.25s ease,
-        border-color 0.25s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-
-    border-color: rgba(255, 255, 255, 0.16);
 }
 
 .feature-card > span {
-    display: block;
-
-    margin-bottom: 40px;
-
     color: #555;
 
     font-size: 12px;
-
     font-weight: 800;
 
     letter-spacing: 2px;
 }
 
 .feature-card h2 {
+    margin-top: 40px;
+
     margin-bottom: 10px;
 
-    font-size: 21px;
+    font-size: 22px;
 }
 
 .feature-card p {
@@ -655,169 +639,142 @@ img {
 }
 
 
-/* ================================
+/* =================================
    Games
-================================ */
+================================= */
 
 .game-card {
     display: grid;
 
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: 0.7fr 1.3fr;
 
-    min-height: 350px;
+    gap: 40px;
+
+    padding: 40px;
 
     background:
-        linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0.055),
-            rgba(255, 255, 255, 0.015)
-        );
+        rgba(255, 255, 255, 0.025);
 
-    border: 1px solid rgba(255, 255, 255, 0.09);
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
 
     border-radius: 18px;
-
-    overflow: hidden;
 }
 
 .game-image {
+    min-height: 280px;
+
     display: flex;
 
     align-items: center;
     justify-content: center;
 
-    min-height: 350px;
-
     background:
         radial-gradient(
             circle,
-            rgba(255, 255, 255, 0.09),
-            transparent 65%
+            rgba(255, 255, 255, 0.08),
+            transparent 70%
         );
 
-    color: #fff;
+    border-radius: 14px;
 
-    font-size: 90px;
-}
-
-.game-info {
-    padding: 50px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
+    font-size: 80px;
 }
 
 .game-info > span {
-    margin-bottom: 15px;
-
-    color: #777;
+    color: #666;
 
     font-size: 12px;
-
-    font-weight: 700;
+    font-weight: 800;
 
     letter-spacing: 3px;
 }
 
 .game-info h2 {
-    margin-bottom: 20px;
+    margin:
+        20px 0;
 
-    font-size: 48px;
-
-    letter-spacing: -2px;
+    font-size: 42px;
 }
 
 .game-info p {
-    margin-bottom: 12px;
+    margin-top: 12px;
 
-    color: #999;
-
-    font-size: 15px;
+    color: #888;
 }
 
 .game-status {
-    margin-top: 25px;
+    margin-top: 35px;
 
     color: #aaa;
 
     font-size: 12px;
-
     font-weight: 800;
 
     letter-spacing: 2px;
 }
 
-
-/* ================================
-   Coming Soon
-================================ */
-
 .coming-soon {
-    margin-top: 80px;
+    margin-top: 20px;
 
-    padding: 60px;
+    padding: 45px;
 
-    text-align: center;
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
 
-    background: rgba(255, 255, 255, 0.025);
-
-    border: 1px solid rgba(255, 255, 255, 0.07);
-
-    border-radius: 16px;
+    border-radius: 18px;
 }
 
 .coming-soon > span {
     color: #555;
 
     font-size: 11px;
-
     font-weight: 800;
 
     letter-spacing: 3px;
 }
 
 .coming-soon h2 {
-    margin-top: 15px;
+    margin:
+        15px 0 8px;
 
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .coming-soon p {
-    margin-top: 10px;
-
     color: #777;
 }
 
 
-/* ================================
+/* =================================
    Rules
-================================ */
+================================= */
 
 .rules {
-    display: flex;
+    display: grid;
 
-    flex-direction: column;
+    grid-template-columns:
+        repeat(2, 1fr);
 
-    gap: 12px;
+    gap: 14px;
 }
 
 .rules article {
     display: grid;
 
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 55px 1fr;
 
-    gap: 25px;
+    gap: 20px;
 
-    padding: 28px 30px;
+    padding: 28px;
 
-    background: rgba(255, 255, 255, 0.025);
+    background:
+        rgba(255, 255, 255, 0.025);
 
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
 
-    border-radius: 14px;
+    border-radius: 15px;
 
     transition:
         transform 0.2s ease,
@@ -825,67 +782,68 @@ img {
 }
 
 .rules article:hover {
-    transform: translateX(5px);
+    transform: translateY(-3px);
 
-    border-color: rgba(255, 255, 255, 0.16);
+    border-color:
+        rgba(255, 255, 255, 0.16);
 }
 
 .rules article > span {
     color: #555;
 
     font-size: 12px;
-
     font-weight: 800;
 
     letter-spacing: 2px;
 }
 
-.rules article h2 {
-    margin-bottom: 6px;
+.rules h2 {
+    margin-bottom: 8px;
 
-    font-size: 19px;
+    font-size: 18px;
 }
 
-.rules article p {
+.rules p {
     color: #777;
 
     font-size: 14px;
 }
 
 .rule-note {
-    margin-top: 30px;
+    margin-top: 20px;
 
-    padding: 25px 30px;
+    padding: 30px;
 
-    background: rgba(255, 255, 255, 0.02);
+    background:
+        rgba(255, 255, 255, 0.025);
 
-    border-left: 2px solid #555;
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 15px;
 }
 
 .rule-note > span {
-    display: block;
-
-    margin-bottom: 8px;
-
-    color: #777;
+    color: #666;
 
     font-size: 11px;
-
     font-weight: 800;
 
     letter-spacing: 3px;
 }
 
 .rule-note p {
-    color: #888;
+    margin-top: 10px;
+
+    color: #777;
 
     font-size: 14px;
 }
 
 
-/* ================================
-   Join Server
-================================ */
+/* =================================
+   Join
+================================= */
 
 .join-server {
     display: grid;
@@ -905,7 +863,8 @@ img {
             rgba(255, 255, 255, 0.015)
         );
 
-    border: 1px solid rgba(255, 255, 255, 0.09);
+    border:
+        1px solid rgba(255, 255, 255, 0.09);
 
     border-radius: 20px;
 
@@ -921,7 +880,6 @@ img {
     color: #777;
 
     font-size: 12px;
-
     font-weight: 700;
 
     letter-spacing: 3px;
@@ -934,7 +892,8 @@ img {
 
     color: #fff;
 
-    font-size: clamp(24px, 3vw, 40px);
+    font-size:
+        clamp(24px, 3vw, 40px);
 
     line-height: 1.2;
 
@@ -942,11 +901,6 @@ img {
 
     letter-spacing: -1px;
 }
-
-
-/* ================================
-   複製按鈕
-================================ */
 
 .copy-big {
     padding: 15px 24px;
@@ -960,7 +914,6 @@ img {
     color: #080808;
 
     font-size: 14px;
-
     font-weight: 800;
 
     cursor: pointer;
@@ -995,21 +948,22 @@ img {
 }
 
 
-/* ================================
+/* =================================
    Server Info
-================================ */
+================================= */
 
 .server-info-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+        repeat(2, 1fr);
 
     gap: 14px;
 
     align-content: center;
 }
 
-.server-info-grid > div {
+.info-item {
     min-height: 125px;
 
     padding: 22px;
@@ -1020,9 +974,11 @@ img {
 
     justify-content: center;
 
-    background: rgba(0, 0, 0, 0.25);
+    background:
+        rgba(0, 0, 0, 0.25);
 
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
 
     border-radius: 14px;
 
@@ -1031,25 +987,25 @@ img {
         border-color 0.2s ease;
 }
 
-.server-info-grid > div:hover {
+.info-item:hover {
     transform: translateY(-3px);
 
-    border-color: rgba(255, 255, 255, 0.16);
+    border-color:
+        rgba(255, 255, 255, 0.16);
 }
 
-.server-info-grid > div > span {
+.info-item > span {
     margin-bottom: 7px;
 
     color: #666;
 
     font-size: 10px;
-
     font-weight: 700;
 
     letter-spacing: 2px;
 }
 
-.server-info-grid strong {
+.info-item strong {
     color: #fff;
 
     font-size: 21px;
@@ -1057,14 +1013,14 @@ img {
     line-height: 1.2;
 }
 
-.server-info-grid .online {
+.info-item .online {
     color: #ddd;
 }
 
 
-/* ================================
+/* =================================
    Join Steps
-================================ */
+================================= */
 
 .join-steps {
     margin-top: 120px;
@@ -1081,7 +1037,8 @@ img {
 .join-steps > div {
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns:
+        repeat(4, 1fr);
 
     gap: 18px;
 }
@@ -1093,9 +1050,11 @@ img {
 
     padding: 28px;
 
-    background: rgba(255, 255, 255, 0.025);
+    background:
+        rgba(255, 255, 255, 0.025);
 
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
 
     border-radius: 15px;
 
@@ -1109,7 +1068,8 @@ img {
 .join-steps article:hover {
     transform: translateY(-5px);
 
-    border-color: rgba(255, 255, 255, 0.16);
+    border-color:
+        rgba(255, 255, 255, 0.16);
 }
 
 .join-steps article > span {
@@ -1120,7 +1080,6 @@ img {
     color: #555;
 
     font-size: 12px;
-
     font-weight: 800;
 
     letter-spacing: 2px;
@@ -1139,16 +1098,18 @@ img {
 }
 
 
-/* ================================
+/* =================================
    Footer
-================================ */
+================================= */
 
 footer {
     width: min(1180px, 88%);
 
     margin: 0 auto;
 
-    padding: 35px 0 45px;
+    padding:
+        35px 0
+        45px;
 
     display: flex;
 
@@ -1176,41 +1137,44 @@ footer {
 }
 
 
-/* ================================
+/* =================================
    平板
-================================ */
+================================= */
 
 @media (max-width: 1100px) {
 
     .home-links {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .content-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
     .join-steps > div {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
+
 }
 
 
-/* ================================
-   手機版
-================================ */
+/* =================================
+   手機
+================================= */
 
 @media (max-width: 900px) {
 
     .navbar {
-        padding: 18px 6%;
+        padding:
+            18px 6%;
 
-        align-items: flex-start;
+        align-items:
+            flex-start;
 
-        flex-direction: column;
+        flex-direction:
+            column;
 
         gap: 15px;
     }
+
 
     .navbar nav {
         width: 100%;
@@ -1220,89 +1184,76 @@ footer {
         padding-bottom: 4px;
     }
 
+
     .navbar nav a {
         flex-shrink: 0;
 
-        padding: 8px 10px;
+        padding:
+            8px 10px;
 
         font-size: 13px;
     }
+
 
     .navbar nav a.active::after {
         left: 10px;
         right: 10px;
     }
 
+
     .nav-button {
         display: none;
     }
 
 
-    /* 首頁 */
-
     .home-hero {
-        min-height: calc(100vh - 130px);
+        min-height:
+            calc(100vh - 130px);
 
-        padding: 80px 6% 90px;
+        padding:
+            80px 6%
+            90px;
     }
 
+
     .home-hero h1 {
-        font-size: clamp(64px, 17vw, 110px);
+        font-size:
+            clamp(
+                64px,
+                17vw,
+                110px
+            );
 
         letter-spacing: -5px;
     }
 
+
     .home-hero p {
         font-size: 15px;
     }
+
 
     .home-links {
         width: 88%;
 
         padding-bottom: 90px;
 
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
-
-    /* 一般頁面 */
 
     .page {
-        padding: 70px 0 80px;
+        padding:
+            70px 0
+            80px;
     }
+
 
     .page-header {
         margin-bottom: 50px;
     }
 
-
-    /* About */
-
-    .content-box {
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-
-        padding: 30px;
-    }
-
-
-    /* Games */
-
-    .game-card {
-        grid-template-columns: 1fr;
-    }
-
-    .game-image {
-        min-height: 220px;
-    }
-
-    .game-info {
-        padding: 35px;
-    }
-
-
-    /* Join */
 
     .join-server {
         grid-template-columns: 1fr;
@@ -1312,15 +1263,27 @@ footer {
         padding: 30px;
     }
 
-    .join-steps {
-        margin-top: 80px;
+
+    .game-card {
+        grid-template-columns: 1fr;
     }
+
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rules {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
-/* ================================
+/* =================================
    小手機
-================================ */
+================================= */
 
 @media (max-width: 600px) {
 
@@ -1328,16 +1291,22 @@ footer {
         font-size: 16px;
     }
 
+
     .custom-logo {
         width: 36px;
         height: 36px;
     }
 
-    .home-hero {
-        padding: 70px 5% 80px;
 
-        align-items: flex-start;
+    .home-hero {
+        padding:
+            70px 5%
+            80px;
+
+        align-items:
+            flex-start;
     }
+
 
     .home-hero h1 {
         font-size: 60px;
@@ -1345,39 +1314,49 @@ footer {
         letter-spacing: -4px;
     }
 
+
     .home-hero p {
         margin-top: 28px;
 
         font-size: 14px;
     }
 
-    .hero-buttons {
-        flex-direction: column;
 
-        align-items: stretch;
+    .hero-buttons {
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
 
         width: 100%;
     }
+
 
     .button {
         width: 100%;
     }
 
+
     .home-links {
         width: 90%;
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
 
         gap: 14px;
     }
+
 
     .home-card {
         min-height: 230px;
     }
 
+
     .page {
         width: 90%;
     }
+
 
     .page-header h1 {
         font-size: 48px;
@@ -1385,45 +1364,53 @@ footer {
         letter-spacing: -2px;
     }
 
-    .content-grid {
+
+    .content-box {
         grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 28px;
     }
 
-    .game-info h2 {
-        font-size: 40px;
+
+    .join-server {
+        padding: 24px;
+
+        border-radius: 16px;
     }
+
 
     .server-info-grid {
         grid-template-columns: 1fr;
     }
 
-    .server-address h2 {
-        font-size: 24px;
-    }
 
     .join-steps > div {
         grid-template-columns: 1fr;
     }
 
+
     .join-steps article {
         min-height: auto;
     }
 
-    .rules article {
-        grid-template-columns: 45px 1fr;
 
-        gap: 15px;
-
-        padding: 22px;
+    .game-image {
+        min-height: 200px;
     }
+
 
     footer {
         width: 90%;
 
-        flex-direction: column;
+        flex-direction:
+            column;
 
-        align-items: flex-start;
+        align-items:
+            flex-start;
 
         gap: 15px;
     }
+
 }
