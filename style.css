@@ -14,7 +14,6 @@ html {
 
 body {
     min-height: 100vh;
-
     background:
         radial-gradient(
             circle at 50% 0%,
@@ -22,30 +21,22 @@ body {
             transparent 35%
         ),
         #080808;
-
     color: #f5f5f5;
-
     font-family:
         Arial,
         "Noto Sans TC",
         "Microsoft JhengHei",
         sans-serif;
-
     line-height: 1.6;
-
-    opacity: 0;
-
-    transition:
-        opacity 0.5s ease;
-}
-
-body.loaded {
-    opacity: 1;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 
@@ -55,31 +46,23 @@ a {
 
 .navbar {
     position: sticky;
-
     top: 0;
-
     z-index: 1000;
 
     width: 100%;
-
     min-height: 76px;
 
     padding: 0 7%;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
-    background:
-        rgba(8, 8, 8, 0.92);
+    background: rgba(8, 8, 8, 0.92);
 
-    border-bottom:
-        1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
-    backdrop-filter:
-        blur(14px);
+    backdrop-filter: blur(14px);
 }
 
 
@@ -89,13 +72,11 @@ a {
 
 .logo {
     display: flex;
-
     align-items: center;
 
     gap: 12px;
 
     font-size: 18px;
-
     font-weight: 700;
 
     letter-spacing: 0.5px;
@@ -108,11 +89,10 @@ a {
 }
 
 
-/* 自訂 Logo */
+/* 自訂 Logo 圖片 */
 
 .custom-logo {
     width: 38px;
-
     height: 38px;
 
     display: block;
@@ -127,9 +107,11 @@ a {
 
 /* Footer Logo */
 
-.footer-custom-logo {
+.footer-logo .custom-logo {
     width: 30px;
     height: 30px;
+
+    border-radius: 6px;
 }
 
 
@@ -139,7 +121,6 @@ a {
 
 .navbar nav {
     display: flex;
-
     align-items: center;
 
     gap: 8px;
@@ -173,9 +154,7 @@ a {
     position: absolute;
 
     left: 14px;
-
     right: 14px;
-
     bottom: 3px;
 
     height: 2px;
@@ -193,15 +172,13 @@ a {
 .nav-button {
     padding: 10px 18px;
 
-    border:
-        1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 
     border-radius: 8px;
 
     color: #fff;
 
     font-size: 12px;
-
     font-weight: 800;
 
     letter-spacing: 1px;
@@ -228,20 +205,16 @@ a {
 ================================ */
 
 .home-hero {
-    min-height:
-        calc(100vh - 76px);
+    min-height: calc(100vh - 76px);
 
     width: 100%;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
-    padding:
-        100px 7%
-        120px;
+    padding: 100px 7% 120px;
 
     position: relative;
 
@@ -249,7 +222,7 @@ a {
 }
 
 
-/* Hero 背景光暈 */
+/* Hero 光暈 */
 
 .home-hero::before {
     content: "";
@@ -257,15 +230,12 @@ a {
     position: absolute;
 
     width: 700px;
-
     height: 700px;
 
     top: -300px;
-
     left: 50%;
 
-    transform:
-        translateX(-50%);
+    transform: translateX(-50%);
 
     background:
         radial-gradient(
@@ -285,14 +255,13 @@ a {
 
     z-index: 1;
 
-    width:
-        min(1180px, 100%);
+    width: min(1180px, 100%);
 
     margin: 0 auto;
 }
 
 
-/* 小標 */
+/* Hero 小標 */
 
 .hero-tag {
     display: inline-block;
@@ -302,22 +271,16 @@ a {
     color: #777;
 
     font-size: 12px;
-
     font-weight: 700;
 
     letter-spacing: 4px;
 }
 
 
-/* 主標題 */
+/* Hero 標題 */
 
 .home-hero h1 {
-    font-size:
-        clamp(
-            72px,
-            11vw,
-            150px
-        );
+    font-size: clamp(72px, 11vw, 150px);
 
     line-height: 0.9;
 
@@ -364,22 +327,19 @@ a {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     min-height: 48px;
 
     padding: 0 22px;
 
-    border:
-        1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 
     border-radius: 9px;
 
     color: #ddd;
 
     font-size: 14px;
-
     font-weight: 700;
 
     transition:
@@ -392,11 +352,9 @@ a {
 .button:hover {
     transform: translateY(-2px);
 
-    background:
-        rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.08);
 
-    border-color:
-        rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
 
     color: #fff;
 }
@@ -417,29 +375,22 @@ a {
 
 
 /* ================================
-   首頁連結卡片
+   首頁卡片
 ================================ */
 
 .home-links {
-    width:
-        min(1180px, 88%);
+    width: min(1180px, 88%);
 
     margin: 0 auto;
 
-    padding:
-        0 0
-        120px;
+    padding: 0 0 120px;
 
     display: grid;
 
-    grid-template-columns:
-        repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     gap: 18px;
 }
-
-
-/* 卡片 */
 
 .home-card {
     position: relative;
@@ -452,11 +403,9 @@ a {
 
     flex-direction: column;
 
-    background:
-        rgba(255, 255, 255, 0.025);
+    background: rgba(255, 255, 255, 0.025);
 
-    border:
-        1px solid rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.07);
 
     border-radius: 16px;
 
@@ -469,18 +418,12 @@ a {
 }
 
 .home-card:hover {
-    transform:
-        translateY(-6px);
+    transform: translateY(-6px);
 
-    background:
-        rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.04);
 
-    border-color:
-        rgba(255, 255, 255, 0.17);
+    border-color: rgba(255, 255, 255, 0.17);
 }
-
-
-/* 卡片編號 */
 
 .home-card > span {
     display: inline-block;
@@ -490,14 +433,10 @@ a {
     color: #555;
 
     font-size: 12px;
-
     font-weight: 800;
 
     letter-spacing: 2px;
 }
-
-
-/* 卡片標題 */
 
 .home-card h2 {
     margin-bottom: 10px;
@@ -509,9 +448,6 @@ a {
     line-height: 1.3;
 }
 
-
-/* 卡片文字 */
-
 .home-card p {
     color: #777;
 
@@ -519,9 +455,6 @@ a {
 
     line-height: 1.7;
 }
-
-
-/* 卡片連結 */
 
 .home-card strong {
     display: block;
@@ -534,8 +467,7 @@ a {
 
     font-size: 13px;
 
-    transition:
-        color 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .home-card:hover strong {
@@ -544,19 +476,21 @@ a {
 
 
 /* ================================
-   其他頁面共用
+   一般頁面
 ================================ */
 
 .page {
-    width:
-        min(1180px, 88%);
+    width: min(1180px, 88%);
 
     margin: 0 auto;
 
-    padding:
-        100px 0
-        120px;
+    padding: 100px 0 120px;
 }
+
+
+/* ================================
+   頁面標題
+================================ */
 
 .page-header {
     max-width: 800px;
@@ -572,19 +506,13 @@ a {
     color: #777;
 
     font-size: 12px;
-
     font-weight: 700;
 
     letter-spacing: 3px;
 }
 
 .page-header h1 {
-    font-size:
-        clamp(
-            48px,
-            7vw,
-            88px
-        );
+    font-size: clamp(48px, 7vw, 88px);
 
     line-height: 0.98;
 
@@ -609,25 +537,605 @@ a {
 
 
 /* ================================
-   卡片進場動畫
+   About Content
 ================================ */
 
-.reveal {
-    opacity: 0;
+.content-box {
+    display: grid;
 
-    transform:
-        translateY(25px);
+    grid-template-columns: 100px 1fr;
 
-    transition:
-        opacity 0.6s ease,
-        transform 0.6s ease;
+    gap: 40px;
+
+    padding: 45px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.015)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+
+    border-radius: 18px;
 }
 
-.reveal.show {
-    opacity: 1;
+.content-number {
+    color: #555;
 
-    transform:
-        translateY(0);
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.content-box h2 {
+    margin-bottom: 20px;
+
+    font-size: 32px;
+}
+
+.content-box p {
+    margin-bottom: 16px;
+
+    color: #999;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+.content-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ================================
+   About Feature Cards
+================================ */
+
+.content-grid {
+    margin-top: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.feature-card {
+    min-height: 220px;
+
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 16px;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.feature-card > span {
+    display: block;
+
+    margin-bottom: 40px;
+
+    color: #555;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.feature-card h2 {
+    margin-bottom: 10px;
+
+    font-size: 21px;
+}
+
+.feature-card p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   Games
+================================ */
+
+.game-card {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    min-height: 350px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.015)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+.game-image {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 350px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.09),
+            transparent 65%
+        );
+
+    color: #fff;
+
+    font-size: 90px;
+}
+
+.game-info {
+    padding: 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.game-info > span {
+    margin-bottom: 15px;
+
+    color: #777;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.game-info h2 {
+    margin-bottom: 20px;
+
+    font-size: 48px;
+
+    letter-spacing: -2px;
+}
+
+.game-info p {
+    margin-bottom: 12px;
+
+    color: #999;
+
+    font-size: 15px;
+}
+
+.game-status {
+    margin-top: 25px;
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================================
+   Coming Soon
+================================ */
+
+.coming-soon {
+    margin-top: 80px;
+
+    padding: 60px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 16px;
+}
+
+.coming-soon > span {
+    color: #555;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.coming-soon h2 {
+    margin-top: 15px;
+
+    font-size: 32px;
+}
+
+.coming-soon p {
+    margin-top: 10px;
+
+    color: #777;
+}
+
+
+/* ================================
+   Rules
+================================ */
+
+.rules {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.rules article {
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    gap: 25px;
+
+    padding: 28px 30px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.rules article:hover {
+    transform: translateX(5px);
+
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.rules article > span {
+    color: #555;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.rules article h2 {
+    margin-bottom: 6px;
+
+    font-size: 19px;
+}
+
+.rules article p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+.rule-note {
+    margin-top: 30px;
+
+    padding: 25px 30px;
+
+    background: rgba(255, 255, 255, 0.02);
+
+    border-left: 2px solid #555;
+}
+
+.rule-note > span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.rule-note p {
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   Join Server
+================================ */
+
+.join-server {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.35fr)
+        minmax(350px, 0.85fr);
+
+    gap: 60px;
+
+    padding: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.015)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.server-address > span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #777;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.server-address h2 {
+    max-width: 100%;
+
+    margin-bottom: 28px;
+
+    color: #fff;
+
+    font-size: clamp(24px, 3vw, 40px);
+
+    line-height: 1.2;
+
+    word-break: break-word;
+
+    letter-spacing: -1px;
+}
+
+
+/* ================================
+   複製按鈕
+================================ */
+
+.copy-big {
+    padding: 15px 24px;
+
+    border: 0;
+
+    border-radius: 10px;
+
+    background: #fff;
+
+    color: #080808;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.copy-big:hover {
+    background: #ddd;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 30px rgba(255, 255, 255, 0.08);
+}
+
+.copy-big:active {
+    transform: translateY(0);
+}
+
+#copyMessage {
+    min-height: 24px;
+
+    margin-top: 14px;
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   Server Info
+================================ */
+
+.server-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+
+    align-content: center;
+}
+
+.server-info-grid > div {
+    min-height: 125px;
+
+    padding: 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.server-info-grid > div:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.server-info-grid > div > span {
+    margin-bottom: 7px;
+
+    color: #666;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.server-info-grid strong {
+    color: #fff;
+
+    font-size: 21px;
+
+    line-height: 1.2;
+}
+
+.server-info-grid .online {
+    color: #ddd;
+}
+
+
+/* ================================
+   Join Steps
+================================ */
+
+.join-steps {
+    margin-top: 120px;
+}
+
+.join-steps > h2 {
+    margin-bottom: 40px;
+
+    font-size: 34px;
+
+    letter-spacing: -1px;
+}
+
+.join-steps > div {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.join-steps article {
+    position: relative;
+
+    min-height: 210px;
+
+    padding: 28px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.join-steps article:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.join-steps article > span {
+    display: inline-block;
+
+    margin-bottom: 35px;
+
+    color: #555;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.join-steps article h3 {
+    margin-bottom: 10px;
+
+    font-size: 19px;
+}
+
+.join-steps article p {
+    color: #777;
+
+    font-size: 14px;
 }
 
 
@@ -636,19 +1144,15 @@ a {
 ================================ */
 
 footer {
-    width:
-        min(1180px, 88%);
+    width: min(1180px, 88%);
 
     margin: 0 auto;
 
-    padding:
-        35px 0
-        45px;
+    padding: 35px 0 45px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
 
     color: #666;
@@ -679,10 +1183,16 @@ footer {
 @media (max-width: 1100px) {
 
     .home-links {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .join-steps > div {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -693,18 +1203,14 @@ footer {
 @media (max-width: 900px) {
 
     .navbar {
-        padding:
-            18px 6%;
+        padding: 18px 6%;
 
-        align-items:
-            flex-start;
+        align-items: flex-start;
 
-        flex-direction:
-            column;
+        flex-direction: column;
 
         gap: 15px;
     }
-
 
     .navbar nav {
         width: 100%;
@@ -714,23 +1220,18 @@ footer {
         padding-bottom: 4px;
     }
 
-
     .navbar nav a {
         flex-shrink: 0;
 
-        padding:
-            8px 10px;
+        padding: 8px 10px;
 
         font-size: 13px;
     }
 
-
     .navbar nav a.active::after {
         left: 10px;
-
         right: 10px;
     }
-
 
     .nav-button {
         display: none;
@@ -740,55 +1241,80 @@ footer {
     /* 首頁 */
 
     .home-hero {
-        min-height:
-            calc(100vh - 130px);
+        min-height: calc(100vh - 130px);
 
-        padding:
-            80px 6%
-            90px;
+        padding: 80px 6% 90px;
     }
 
-
     .home-hero h1 {
-        font-size:
-            clamp(
-                64px,
-                17vw,
-                110px
-            );
+        font-size: clamp(64px, 17vw, 110px);
 
         letter-spacing: -5px;
     }
 
-
     .home-hero p {
         font-size: 15px;
     }
-
 
     .home-links {
         width: 88%;
 
         padding-bottom: 90px;
 
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
     /* 一般頁面 */
 
     .page {
-        padding:
-            70px 0
-            80px;
+        padding: 70px 0 80px;
     }
-
 
     .page-header {
         margin-bottom: 50px;
     }
 
+
+    /* About */
+
+    .content-box {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        padding: 30px;
+    }
+
+
+    /* Games */
+
+    .game-card {
+        grid-template-columns: 1fr;
+    }
+
+    .game-image {
+        min-height: 220px;
+    }
+
+    .game-info {
+        padding: 35px;
+    }
+
+
+    /* Join */
+
+    .join-server {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 30px;
+    }
+
+    .join-steps {
+        margin-top: 80px;
+    }
 }
 
 
@@ -802,23 +1328,16 @@ footer {
         font-size: 16px;
     }
 
-
     .custom-logo {
         width: 36px;
-
         height: 36px;
     }
 
-
     .home-hero {
-        padding:
-            70px 5%
-            80px;
+        padding: 70px 5% 80px;
 
-        align-items:
-            flex-start;
+        align-items: flex-start;
     }
-
 
     .home-hero h1 {
         font-size: 60px;
@@ -826,49 +1345,39 @@ footer {
         letter-spacing: -4px;
     }
 
-
     .home-hero p {
         margin-top: 28px;
 
         font-size: 14px;
     }
 
-
     .hero-buttons {
-        flex-direction:
-            column;
+        flex-direction: column;
 
-        align-items:
-            stretch;
+        align-items: stretch;
 
         width: 100%;
     }
-
 
     .button {
         width: 100%;
     }
 
-
     .home-links {
         width: 90%;
 
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
 
         gap: 14px;
     }
-
 
     .home-card {
         min-height: 230px;
     }
 
-
     .page {
         width: 90%;
     }
-
 
     .page-header h1 {
         font-size: 48px;
@@ -876,17 +1385,45 @@ footer {
         letter-spacing: -2px;
     }
 
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-info h2 {
+        font-size: 40px;
+    }
+
+    .server-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .server-address h2 {
+        font-size: 24px;
+    }
+
+    .join-steps > div {
+        grid-template-columns: 1fr;
+    }
+
+    .join-steps article {
+        min-height: auto;
+    }
+
+    .rules article {
+        grid-template-columns: 45px 1fr;
+
+        gap: 15px;
+
+        padding: 22px;
+    }
 
     footer {
         width: 90%;
 
-        flex-direction:
-            column;
+        flex-direction: column;
 
-        align-items:
-            flex-start;
+        align-items: flex-start;
 
         gap: 15px;
     }
-
 }
