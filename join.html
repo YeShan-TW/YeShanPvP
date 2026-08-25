@@ -4,51 +4,124 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>加入伺服器｜YeShan PVP</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- 網站圖示 -->
+    <link rel="icon"
+          type="image/png"
+          href="favicon.png">
+
+    <link rel="shortcut icon"
+          type="image/png"
+          href="favicon.png">
+
+    <!-- iOS / 手機圖示 -->
+    <link rel="apple-touch-icon"
+          href="favicon.png">
+
+    <!-- 網站 CSS -->
+    <link rel="stylesheet"
+          href="style.css">
 
 </head>
 
+
 <body>
+
 
 <header class="navbar">
 
-    <a href="index.html" class="logo">
-        <span class="logo-box">Y</span>
-        <span>YeShan <b>PVP</b></span>
+
+    <!-- ================================
+         Logo
+    ================================= -->
+
+    <a href="index.html"
+       class="logo">
+
+        <img
+            src="logo.png"
+            alt="YeShan PVP"
+            class="custom-logo">
+
+        <span>
+            YeShan <b>PVP</b>
+        </span>
+
     </a>
+
+
+    <!-- ================================
+         導覽列
+    ================================= -->
 
     <nav>
 
-        <a href="index.html">首頁</a>
+        <a href="index.html">
+            首頁
+        </a>
 
-        <a href="about.html">伺服器介紹</a>
+        <a href="about.html">
+            伺服器介紹
+        </a>
 
-        <a href="games.html">遊戲模式</a>
+        <a href="games.html">
+            遊戲模式
+        </a>
 
-        <a href="rules.html">伺服器規則</a>
+        <a href="rules.html">
+            伺服器規則
+        </a>
 
-        <a href="join.html" class="active">
+        <a href="join.html"
+           class="active">
             加入伺服器
         </a>
 
     </nav>
 
+
+    <!-- ================================
+         PLAY NOW
+    ================================= -->
+
+    <a href="join.html"
+       class="nav-button">
+
+        PLAY NOW
+
+    </a>
+
+
 </header>
+
 
 
 <main class="page">
 
+
+    <!-- ================================
+         頁面標題
+    ================================= -->
+
     <div class="page-header">
 
-        <span>04 / JOIN SERVER</span>
+        <span>
+            04 / JOIN SERVER
+        </span>
 
         <h1>
+
             加入<br>
-            <em>YeShan PVP</em>
+
+            <em>
+                YeShan PVP
+            </em>
+
         </h1>
 
         <p>
@@ -58,112 +131,284 @@
     </div>
 
 
+
+    <!-- ================================
+         Server
+    ================================= -->
+
     <section class="join-server">
 
-        <div>
 
-            <span>SERVER ADDRESS</span>
+        <!-- ============================
+             Server Address
+        ============================= -->
+
+        <div class="server-address">
+
+            <span>
+                SERVER ADDRESS
+            </span>
+
 
             <h2>
                 YeShanPvP.play.minekube.net
             </h2>
 
-            <button id="copyIP" class="copy-big">
+
+            <button
+                id="copyIP"
+                class="copy-big"
+                type="button">
+
                 複製伺服器 IP
+
             </button>
+
 
             <p id="copyMessage"></p>
 
         </div>
 
 
+
+        <!-- ============================
+             Server Info
+        ============================= -->
+
         <div class="server-info-grid">
 
-            <div>
-                <span>VERSION</span>
-                <strong>1.20.6</strong>
-            </div>
 
-            <div>
-                <span>EDITION</span>
-                <strong>Java</strong>
-            </div>
+            <!-- Version -->
 
-            <div>
-                <span>GAME MODE</span>
-                <strong>FFA PvP</strong>
-            </div>
+            <div class="info-item">
 
-            <div>
-                <span>STATUS</span>
-                <strong class="online">
-                    ● Online
+                <span>
+                    VERSION
+                </span>
+
+                <strong>
+                    1.20.6
                 </strong>
+
             </div>
+
+
+
+            <!-- Edition -->
+
+            <div class="info-item">
+
+                <span>
+                    EDITION
+                </span>
+
+                <strong>
+                    Java
+                </strong>
+
+            </div>
+
+
+
+            <!-- Game Mode -->
+
+            <div class="info-item">
+
+                <span>
+                    GAME MODE
+                </span>
+
+                <strong>
+                    FFA PvP
+                </strong>
+
+            </div>
+
+
+
+            <!-- Status -->
+
+            <div class="info-item">
+
+                <span>
+                    STATUS
+                </span>
+
+
+                <!--
+                    JavaScript 會根據伺服器狀態修改這裡
+                -->
+
+                <strong
+                    id="serverStatus"
+                    class="server-status">
+
+                    <span
+                        class="status-icon"
+                        id="statusIcon">
+                        🌐
+                    </span>
+
+                    <span
+                        id="statusText">
+                        Checking...
+                    </span>
+
+                </strong>
+
+            </div>
+
 
         </div>
 
+
     </section>
 
+
+
+    <!-- ================================
+         Join Steps
+    ================================= -->
 
     <section class="join-steps">
 
-        <h2>如何加入？</h2>
+
+        <h2>
+            如何加入？
+        </h2>
+
 
         <div>
 
-            <article>
-                <span>01</span>
-                <h3>開啟 Minecraft</h3>
-                <p>
-                    使用 Java Edition。
-                </p>
-            </article>
+
+            <!-- Step 01 -->
 
             <article>
-                <span>02</span>
-                <h3>多人遊戲</h3>
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    開啟 Minecraft
+                </h3>
+
+                <p>
+                    使用 Minecraft Java Edition。
+                </p>
+
+            </article>
+
+
+
+            <!-- Step 02 -->
+
+            <article>
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    多人遊戲
+                </h3>
+
                 <p>
                     開啟 Minecraft 多人遊戲。
                 </p>
+
             </article>
 
+
+
+            <!-- Step 03 -->
+
             <article>
-                <span>03</span>
-                <h3>新增伺服器</h3>
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    新增伺服器
+                </h3>
+
                 <p>
                     輸入上面的 Server IP。
                 </p>
+
             </article>
 
+
+
+            <!-- Step 04 -->
+
             <article>
-                <span>04</span>
-                <h3>開始遊玩</h3>
+
+                <span>
+                    04
+                </span>
+
+                <h3>
+                    開始遊玩
+                </h3>
+
                 <p>
                     加入 YeShan PVP。
                 </p>
+
             </article>
+
 
         </div>
 
+
     </section>
+
 
 </main>
 
 
+
+<!-- ================================
+     Footer
+================================= -->
+
 <footer>
 
+
     <div class="footer-logo">
-        <span class="logo-box">Y</span>
-        YeShan PVP
+
+
+        <img
+            src="logo.png"
+            alt="YeShan PVP"
+            class="custom-logo footer-custom-logo">
+
+
+        <span>
+            YeShan PVP
+        </span>
+
+
     </div>
 
-    <span>© 2026 YeShan PVP</span>
+
+    <span>
+        © 2026 YeShan PVP
+    </span>
+
 
 </footer>
 
 
+
+<!-- ================================
+     JavaScript
+================================= -->
+
 <script src="script.js"></script>
+
 
 </body>
 
